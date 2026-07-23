@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Astronaut ominerse.pk</title>
+  </head>
+  <body>
+    <!--Header-->
+
+    <div class="logo">
+      <img src="images/logo.jpg" width="255px" alt="Astronaut Omiverse.pk" />
+    </div>
+
+    <nav>
+      <div class="nav-links" id="navlinks">
+        <i class="fa fa-times" onclick="hideMenu() "></i>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About us.html">About us</a></li>
+          <li><a href="collections.html">Collection</a></li>
+          <li><a href="sign up.html">Sign up</a></li>
+        </ul>
+      </div>
+
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!--Header-->
+
+    <!--About us--> 
+    <div class="banner">
+      <div class="text-block">
+        <h1>Astronaut Nfts</h1>
+        <a href="sign up.html" class="btn-primary">Sign up</a>
+      </div>
+    </div>
+   
+    <!-- About us -->
+
+    <footer>
+      <h2></h2>
+
+      <div class="container3">
+        <img class="logos" src="images/twitter.svg" />
+        <img class="logos" src="images/youtube.svg" />
+        <img class="logos" src="images/instagram.png" />
+        <img class="logos" src="images/discord.svg" />
+        <img class="logos" src="images/mail.png" />
+      </div>
+      <div class="container4">
+        <div class="footer-content">Privacy Policy</div>
+        <div class="footer-content">Cookies Policy</div>
+        <div class="footer-content">Terms os Service</div>
+        <div class="footer-content">Purchase/Return Policy</div>
+      </div>
+      <div class="container5">
+        <div class="copyright">
+          copyright 2024 Astronaut Omniverse,By Zolodia inc
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function showMenu() {
+        navlinks.style.left = "0";
+      }
+
+      function hideMenu() {
+        navlinks.style.left = "-150px";
+      }
+    </script>
+  </body>
+</html>

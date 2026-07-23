@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+.logo {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-links {
+  background: black;
+  text-align: center;
+  border: 1px solid;
+}
+
+.nav-links :hover {
+  color: #30efe2;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 15px 10px 15px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  min-height: 35vh;
+  background: url("../images/banner.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+/* .add-banner{
+ 
+  width: 100%;
+  height:200px;
+   background: url("../images/add\ banner.jpg") no-repeat;
+   background-size: cover;
+   position: relative;
+ } */
+
+.text-block {
+  width: 50%;
+  color: #7df9ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.text-block h1 {
+  font-size: 55px;
+  color: #30efe2;
+}
+
+.btn-primary {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 2px 15px;
+  background: transparent;
+  position: relative;
+}
+
+.btn-primary:hover {
+  border: 1px solid black;
+  background: #7df9ff;
+  color: black;
+  transition: 0.5s;
+}
+
+h1 {
+  color: white;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #30efe2;
+  font-size: 48px;
+  padding: 25px 0px 20px 0px;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: #f51475;
+  font-size: 45px;
+  text-align: center;
+  padding: 100px 0px 50px 0px;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-box {
+  margin-bottom: 30px;
+}
+
+.Element {
+  height: 277px;
+  width: 277px;
+}
+
+h4 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  color: #30efe2;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.container2 :hover {
+  background: rgb(35, 34, 34);
+}
+.platforms {
+  width: 150px;
+  height: 150px;
+  padding-bottom: 50px;
+}
+
+footer {
+  height: 300px;
+  width: auto;
+  margin-top: 100px;
+  background-color: rgb(24, 21, 21);
+}
+
+.container3 {
+  margin-top: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.container4 {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-weight: ;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.container4 :hover {
+  color: #30efe2;
+}
+
+.container5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 40px;
+  font-size: 18px;
+}
+
+@media (max-width: 700px) {
+  .text-block h1 {
+    font-size: 40px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: black;
+    height: 100vh;
+    width: 150px;
+    text-align: left;
+    z-index: 2;
+    top: 0;
+    left: -150px;
+    transition: 0.5s;
+  }
+
+  .fa-times {
+    display: block;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .fa-bars {
+    color: white;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .image-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    padding-bottom: 30px;
+  }
+
+  .container2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .platforms {
+    width: 200px;
+    height: 150px;
+  }
+  footer {
+    height: 460px;
+    width: auto;
+  }
+  .container4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .container5 {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+}
